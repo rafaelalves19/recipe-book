@@ -1,0 +1,45 @@
+.suggested-container {
+  width: 100%;
+  height: 30%;
+  margin-top: 24px;
+}
+.suggested-container > div {
+  margin-top: 24px;
+}
+
+.suggested__title {
+  font-size: 30px;
+}
+
+.suggested__slider {
+  display: flex;
+  justify-content: center;
+}
+
+/* ----> STARTS LAPTOP MENU <----*/
+
+@media screen and (max-width: 1680px) {
+  .suggested-container {
+    margin-top: 4px;
+  }
+
+  .suggested__title {
+    font-size: 22px;
+  }
+}
+
+/* ----> STARTS TABLET MENU <----*/
+
+@media screen and (max-width: 1025px) {
+  .suggested__slider {
+    margin-bottom: 5px;
+  }
+}
+
+/* ----> STARTS MOBILE MENU <----*/
+
+@media screen and (max-width: 640px) {
+  .suggested-container {
+    padding-top: 22px;
+  }
+}

@@ -1,0 +1,46 @@
+.popupvideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(1.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 22;
+}
+
+.popup-video-container {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: -50px;
+  right: -50px;
+}
+.close-btn img {
+  width: 30px;
+  height: 30px;
+  filter: invert(31%) sepia(25%) saturate(6069%) hue-rotate(21deg)
+    brightness(96%) contrast(97%);
+}
+
+/* ----> STARTS MOBILE MENU <----*/
+
+@media screen and (max-width: 640px) {
+  .close-btn {
+    position: absolute;
+    top: -50px;
+    right: 50px;
+  }
+
+  .popup-video-container {
+    padding: 10px;
+  }
+}

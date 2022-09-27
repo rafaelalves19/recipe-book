@@ -1,0 +1,33 @@
+.favorites {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.card-container {
+  position: relative;
+}
+
+.add-fav-home {
+  width: 200px;
+  height: 200px;
+}
+.add-fav-icon {
+  width: 10px;
+  height: 20px;
+}
+
+/* ----> STARTS LAPTOP MENU <----*/
+
+@media screen and (max-width: 1680px) {
+  .favorites {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+/* ----> STARTS MOBILE MENU <----*/
+
+@media screen and (max-width: 1680px) {
+  .favorites {
+    grid-template-columns: 1fr 1fr;
+  }
+}

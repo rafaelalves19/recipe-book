@@ -1,0 +1,11 @@
+.remove-container {
+  position: relative;
+  height: 28px;
+  width: 28px;
+}
+
+.remove-icon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}

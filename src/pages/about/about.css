@@ -1,0 +1,15 @@
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.about__picture {
+  width: 450px;
+  height: auto;
+}
+
+.about__picture img {
+  height: 100%;
+  width: 100%;
+}

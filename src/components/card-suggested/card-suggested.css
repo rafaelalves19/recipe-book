@@ -1,0 +1,121 @@
+.card-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  overflow: hidden;
+}
+
+.card-container:hover .card__recipe-info {
+  bottom: 0;
+}
+
+.card__recipe-img {
+  width: 100%;
+  height: 220px;
+}
+
+.card__recipe-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__recipe-info {
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  padding: 10px 20px;
+  transition: bottom ease 250ms;
+  bottom: -100%;
+}
+
+
+
+.card__recipe-ingredients {
+  margin-top: 6px;
+  list-style: none;
+}
+
+.card__recipe-ingredients li {
+  font-size: 15px;
+}
+
+.card__recipe-icon {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.card__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.splide__slide {
+  padding: 0 24px;
+}
+
+.splide__pagination {
+  bottom: -24px !important;
+}
+
+.splide__pagination__page {
+  background-color: var(--color-main) !important;
+  opacity: 0.5 !important;
+}
+
+.splide__pagination__page.is-active {
+  background-color: var(--color-main) !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+.splide__arrow {
+  top: unset !important;
+  bottom: -48px;
+  background-color: var(--color-main) !important;
+}
+
+.splide__arrow path {
+  fill: #fff;
+}
+
+/* ----> STARTS LAPTOP MENU <----*/
+
+@media screen and (max-width: 1680px) {
+  .card-container {
+    height: 160px;
+  }
+}
+
+/* ----> STARTS TABLET MENU <----*/
+
+@media screen and (max-width: 640px) {
+  .card-container {
+    width: 135px;
+    height: 130px;
+  }
+
+  .card__recipe-info {
+    bottom: -150%;
+    padding: 6px 10px;
+
+  }
+
+  .card__recipe-name {
+    font-size: 12px;
+  }
+  
+  .card__icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+  }
+  
+  
+  .card__recipe-ingredients li {
+    font-size: 12px;
+  }
+}
