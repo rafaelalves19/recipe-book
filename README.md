@@ -3,9 +3,7 @@
 
 ---
 
-### First project in React App
+### First project in React App 🚀
 
-#### This app uses a [recipe API](https://www.themealdb.com/ "recipe API").
-
-
+#### This app uses a [recipe API](https://www.themealdb.com/ "recipe API") 🍕 .
 
